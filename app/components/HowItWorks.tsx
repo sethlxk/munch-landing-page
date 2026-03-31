@@ -8,21 +8,21 @@ const steps = [
     title: "Create Your Profile",
     description:
       "Tell us about your food preferences, dietary restrictions, and favorite cuisines. It only takes 2 minutes.",
-    color: "bg-munch-blue",
+    color: "bg-munch-red",
   },
   {
     number: "02",
     title: "Get Matched",
     description:
       "Our AI analyzes your taste profile and local food scene to surface personalized recommendations instantly.",
-    color: "bg-munch-green",
+    color: "bg-munch-red-light",
   },
   {
     number: "03",
     title: "Eat & Rate",
     description:
       "Try new meals and rate your experience. The more you munch, the smarter your recommendations get.",
-    color: "bg-purple-500",
+    color: "bg-munch-green",
   },
 ];
 
@@ -33,8 +33,8 @@ export default function HowItWorks() {
       className="py-24 lg:py-32 bg-munch-dark relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-munch-blue/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-munch-green/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-munch-red/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-munch-red-light/10 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
@@ -44,7 +44,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="text-sm font-semibold text-munch-green uppercase tracking-wider">
+          <span className="text-sm font-semibold text-munch-red-light uppercase tracking-wider">
             How It Works
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-extrabold text-white">

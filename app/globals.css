@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a2e;
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --accent: #22c55e;
-  --accent-dark: #16a34a;
-  --munch-blue: #2563eb;
-  --munch-green: #22c55e;
-  --munch-dark: #1a1a2e;
-  --munch-light: #f0fdf4;
+  --background: #FCF3EC;
+  --foreground: #2D2D2D;
+  --primary: #AA282B;
+  --primary-dark: #8B2023;
+  --secondary: #B54B4D;
+  --munch-cream: #FCF3EC;
+  --munch-red: #AA282B;
+  --munch-red-dark: #8B2023;
+  --munch-red-light: #B54B4D;
+  --munch-dark: #2D2D2D;
+  --munch-gray: #5D5D5D;
+  --munch-warm: #F5EAE0;
+  --munch-green: #27AE60;
+  --munch-green-dark: #219a52;
 }
 
 @theme inline {
@@ -18,20 +22,24 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
-  --color-accent: var(--accent);
-  --color-accent-dark: var(--accent-dark);
-  --color-munch-blue: var(--munch-blue);
-  --color-munch-green: var(--munch-green);
+  --color-secondary: var(--secondary);
+  --color-munch-cream: var(--munch-cream);
+  --color-munch-red: var(--munch-red);
+  --color-munch-red-dark: var(--munch-red-dark);
+  --color-munch-red-light: var(--munch-red-light);
   --color-munch-dark: var(--munch-dark);
-  --color-munch-light: var(--munch-light);
-  --font-sans: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "SF Mono", "Fira Code", "Fira Mono", monospace;
+  --color-munch-gray: var(--munch-gray);
+  --color-munch-warm: var(--munch-warm);
+  --color-munch-green: var(--munch-green);
+  --color-munch-green-dark: var(--munch-green-dark);
+  --font-sans: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Poppins", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
 
 html {
@@ -44,7 +52,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--munch-warm);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -64,7 +72,7 @@ html {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, var(--munch-blue), var(--munch-green));
+  background: linear-gradient(135deg, var(--munch-red), var(--munch-red-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -72,5 +80,5 @@ html {
 
 /* Glow effect */
 .glow {
-  box-shadow: 0 0 40px rgba(37, 99, 235, 0.3), 0 0 80px rgba(34, 197, 94, 0.1);
+  box-shadow: 0 0 40px rgba(170, 40, 43, 0.2), 0 0 80px rgba(181, 75, 77, 0.1);
 }

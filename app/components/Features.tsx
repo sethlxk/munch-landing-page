@@ -9,42 +9,42 @@ const features = [
     title: "AI-Powered Taste Profile",
     description:
       "Munch learns your preferences over time, building a unique taste profile that gets smarter with every meal.",
-    color: "from-blue-500 to-blue-600",
+    color: "bg-munch-red",
   },
   {
     icon: MapPin,
     title: "Hyper-Local Discovery",
     description:
       "Find hidden gems and trending spots near you. Never wonder where to eat again.",
-    color: "from-green-500 to-green-600",
+    color: "bg-munch-red-dark",
   },
   {
     icon: Utensils,
     title: "Meal Matching",
     description:
       "Get personalized meal recommendations that match your mood, dietary needs, and cravings.",
-    color: "from-purple-500 to-purple-600",
+    color: "bg-munch-red-light",
   },
   {
     icon: Users,
     title: "Social Dining",
     description:
-      "Share your food discoveries with friends. Plan group meals that satisfy everyone&apos;s taste.",
-    color: "from-orange-500 to-orange-600",
+      "Share your food discoveries with friends. Plan group meals that satisfy everyone's taste.",
+    color: "bg-munch-green",
   },
   {
     icon: Sparkles,
     title: "Smart Suggestions",
     description:
       "Our algorithm considers time of day, weather, and your habits to suggest the perfect meal.",
-    color: "from-pink-500 to-pink-600",
+    color: "bg-munch-red",
   },
   {
     icon: Heart,
     title: "Dietary Aware",
     description:
       "Vegan, gluten-free, keto — Munch respects your dietary preferences and restrictions.",
-    color: "from-red-500 to-red-600",
+    color: "bg-munch-green-dark",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function Features() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-semibold text-munch-blue uppercase tracking-wider">
+          <span className="text-sm font-semibold text-munch-red uppercase tracking-wider">
             Features
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-extrabold text-munch-dark">
@@ -79,7 +79,7 @@ export default function Features() {
             <br />
             <span className="gradient-text">Choose Munch</span>
           </h2>
-          <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-munch-gray max-w-2xl mx-auto">
             Smart technology meets your appetite. Discover features designed to
             make every meal an experience worth savoring.
           </p>
@@ -97,17 +97,17 @@ export default function Features() {
             <motion.div
               key={feature.title}
               variants={itemVariants}
-              className="group relative p-8 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100"
+              className="group relative p-8 rounded-2xl bg-munch-cream/50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-black/[0.08]"
             >
               <div
-                className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}
+                className={`w-14 h-14 rounded-2xl ${feature.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}
               >
                 <feature.icon className="text-white" size={24} />
               </div>
               <h3 className="text-xl font-bold text-munch-dark mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-500 leading-relaxed">
+              <p className="text-munch-gray leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

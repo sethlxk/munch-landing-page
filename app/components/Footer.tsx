@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-munch-blue to-munch-green flex items-center justify-center">
+              <div className="w-9 h-9 rounded-xl bg-munch-red flex items-center justify-center">
                 <span className="text-white font-bold text-lg">M</span>
               </div>
               <span className="text-xl font-bold text-white">Munch</span>
@@ -77,7 +77,6 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Munch. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            {/* Social icons */}
             {["Twitter", "Instagram", "TikTok"].map((social) => (
               <a
                 key={social}

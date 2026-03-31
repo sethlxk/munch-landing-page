@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 lg:py-32 bg-gray-50">
+    <section id="testimonials" className="py-24 lg:py-32 bg-munch-cream">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <motion.div
@@ -38,13 +38,13 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-semibold text-munch-blue uppercase tracking-wider">
+          <span className="text-sm font-semibold text-munch-red uppercase tracking-wider">
             Testimonials
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-extrabold text-munch-dark">
             Loved by <span className="gradient-text">Food Lovers</span>
           </h2>
-          <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-munch-gray max-w-2xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what the Munch
             community has to say.
           </p>
@@ -59,7 +59,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.5 }}
-              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-black/[0.04]"
             >
               {/* Stars */}
               <div className="flex gap-1 mb-4">
@@ -73,13 +73,13 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-munch-gray leading-relaxed mb-6">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-gradient-to-br from-munch-blue to-munch-green flex items-center justify-center">
+                <div className="w-11 h-11 rounded-full bg-gradient-to-br from-munch-red to-munch-red-dark flex items-center justify-center">
                   <span className="text-white font-bold text-sm">
                     {testimonial.name.charAt(0)}
                   </span>
@@ -88,7 +88,7 @@ export default function Testimonials() {
                   <p className="font-semibold text-munch-dark">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm text-gray-400">{testimonial.role}</p>
+                  <p className="text-sm text-munch-gray">{testimonial.role}</p>
                 </div>
               </div>
             </motion.div>
