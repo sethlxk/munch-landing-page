@@ -4,10 +4,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
+const leftLinks = [
   { name: "Features", href: "#features" },
   { name: "How It Works", href: "#how-it-works" },
   { name: "Testimonials", href: "#testimonials" },
+];
+
+const rightLinks = [
+  { name: "About", href: "#" },
+  { name: "Contact", href: "#" },
 ];
 
 export default function Navbar() {
@@ -17,34 +22,42 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-munch-cream/80 backdrop-blur-md border-b border-black/[0.08]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-xl bg-munch-red flex items-center justify-center">
-              <span className="text-white font-bold text-lg">M</span>
-            </div>
-            <span className="text-xl font-bold text-munch-dark">Munch</span>
-          </a>
-
-          {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+          {/* Left links (desktop) */}
+          <div className="hidden md:flex items-center gap-8 flex-1">
+            {leftLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-munch-gray hover:text-munch-red transition-colors"
+                className="text-xs font-medium uppercase tracking-wider text-munch-gray hover:text-munch-red transition-colors"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* Center logo */}
+          <a href="#" className="flex items-center justify-center">
+            <span className="text-xl font-extrabold text-munch-dark tracking-tight">
+              MUNCH
+            </span>
+          </a>
+
+          {/* Right links + CTA (desktop) */}
+          <div className="hidden md:flex items-center justify-end gap-8 flex-1">
+            {rightLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-xs font-medium uppercase tracking-wider text-munch-gray hover:text-munch-red transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
             <a
               href="#download"
-              className="px-5 py-2.5 rounded-full bg-munch-red text-white text-sm font-semibold hover:bg-munch-red-dark transition-colors shadow-lg shadow-munch-red/20"
+              className="px-4 py-2 border border-munch-dark text-munch-dark text-xs font-semibold uppercase tracking-wider hover:bg-munch-dark hover:text-white transition-all"
             >
-              Download App
+              Get the App
             </a>
           </div>
 
@@ -69,7 +82,7 @@ export default function Navbar() {
             className="md:hidden bg-munch-cream border-b border-black/[0.08]"
           >
             <div className="px-6 py-4 flex flex-col gap-4">
-              {navLinks.map((link) => (
+              {[...leftLinks, ...rightLinks].map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
@@ -81,10 +94,10 @@ export default function Navbar() {
               ))}
               <a
                 href="#download"
-                className="px-5 py-2.5 rounded-full bg-munch-red text-white text-sm font-semibold text-center"
+                className="px-5 py-2.5 border border-munch-dark text-munch-dark text-sm font-semibold text-center hover:bg-munch-dark hover:text-white transition-all"
                 onClick={() => setMobileOpen(false)}
               >
-                Download App
+                Get the App
               </a>
             </div>
           </motion.div>
