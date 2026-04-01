@@ -37,7 +37,7 @@ export default function Navbar() {
 
           {/* Center logo */}
           <a href="#" className="flex items-center justify-center">
-            <span className="text-xl font-extrabold text-munch-dark tracking-tight">
+            <span className="text-xl font-extrabold text-munch-red tracking-tight">
               MUNCH
             </span>
           </a>
