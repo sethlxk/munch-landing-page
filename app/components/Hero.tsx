@@ -19,7 +19,7 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10 pt-28 sm:pt-32 text-center"
       >
-        <h1 className="text-[8rem] sm:text-[10rem] md:text-[13rem] lg:text-[16rem] xl:text-[18rem] font-extrabold leading-[0.85] tracking-tight text-munch-dark select-none">
+        <h1 className="text-[8rem] sm:text-[10rem] md:text-[13rem] lg:text-[16rem] xl:text-[18rem] font-extrabold leading-[0.85] tracking-tight text-munch-red select-none">
           MUNCH
         </h1>
       </motion.div>
@@ -29,7 +29,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-        className="relative z-20 -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-44"
+        className="relative z-20 mt-8 sm:mt-10"
       >
         <PhoneMockup />
       </motion.div>
