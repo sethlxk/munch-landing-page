@@ -80,8 +80,7 @@ export default function Features() {
             <span className="gradient-text">Choose Munch</span>
           </h2>
           <p className="mt-4 text-lg text-munch-gray max-w-2xl mx-auto">
-            Smart technology meets your appetite. Discover features designed to
-            make every meal an experience worth savoring.
+            Get better recommendations and reviews tailored to your own taste profile and occasion
           </p>
         </motion.div>
 

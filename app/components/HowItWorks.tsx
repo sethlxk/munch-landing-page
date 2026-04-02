@@ -7,14 +7,14 @@ const steps = [
     number: "01",
     title: "Create Your Profile",
     description:
-      "Tell us about your food preferences, dietary restrictions, and favorite cuisines. It only takes 2 minutes.",
+      "Fill up our onboarding quiz that understandings your taste profile. It only takes 1 minute.",
     color: "bg-munch-red",
   },
   {
     number: "02",
-    title: "Get Matched",
+    title: "Get Your Taste Profile",
     description:
-      "Our AI analyzes your taste profile and local food scene to surface personalized recommendations instantly.",
+      "We analyze your taste profile to surface personalized recommendatios and show you what similar people like.",
     color: "bg-munch-red-light",
   },
   {
@@ -48,9 +48,9 @@ export default function HowItWorks() {
             How It Works
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-extrabold text-white">
-            Three Simple Steps to
+            Three Simple Steps To Your
             <br />
-            Your Perfect Meal
+            Perfect Meal For The Perfect Occasion
           </h2>
         </motion.div>
 
